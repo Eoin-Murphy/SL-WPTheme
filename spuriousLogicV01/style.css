@@ -1,0 +1,173 @@
+
+#top
+{
+	background-color: Gray;		
+	border-style: double;
+	border-width: 4px;
+	border-color: DarkSlateGray;
+	text-align: right;
+	padding-right: 100px;
+}
+
+#top a:link , #top a:visited 
+{
+	font-family: "Courier New";
+	color: white;
+	text-decoration: none;
+}
+
+
+#top_bar
+{
+	margin-left: 5%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#top_bar ul
+{
+	list-style-type: none;
+}
+
+#top_bar ul li
+{
+	display: inline;
+}
+
+#top_bar ul li
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-style: double;
+	border-width: 4px;
+	border-color: DarkSlateGray;
+}
+
+#top_bar ul li a:link, #top_bar ul li a:visited
+{
+	font-family: Verdana;
+	color: DarkSlateBlue ;
+	text-decoration: none;
+	font-size: 1.1em;	
+}
+
+#searchform
+{
+	text-align: right;
+}
+
+#content
+{
+	background-color: Ivory;
+}
+
+
+#content-body
+{
+	width: 70%;
+	margin-left: 5%;	
+	float:left;
+	
+	font-family: Verdana;
+	color: DarkSlateGray;
+	font-size: 0.9em;
+	line-height: 1.2em;
+}
+
+
+
+#content a:link, #content a:visited
+{
+	font-family: Verdana;
+	color: DarkSlateBlue ;
+	text-decoration: none;		
+}
+
+.post li
+{	
+	padding-bottom: 1em;
+}
+
+.more-link, .more-link a:link, .more-link a:visited
+{
+	
+	padding-left: 20px;
+	color: red;
+	font-size: large;
+}
+
+
+.post
+{
+	background-color: WhiteSmoke;
+	margin-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-style: double;
+	border-width: 4px;
+	border-color: DarkSlateGray;
+}
+
+.post .meta, .post .feedback
+{
+	font-size: x-small;
+	padding-bottom: 1em;
+}
+
+
+#content-sidebar
+{
+	float:right;
+	width:20%;
+	font-size: 10px;
+	background-color: WhiteSmoke;
+	margin-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-style: double;
+	border-width: 4px;
+	border-color: DarkSlateGray;	
+}
+
+#content-sidebar h3
+{
+	font-family: Verdana;
+	color: DarkSlateGray;
+}
+
+#content-sidebar ul
+{
+	padding-left: 20px;
+	list-style-type: none;
+}
+
+.clear
+{
+	clear: both;	
+}
+
+
+#footer
+{
+	margin-top: 20px;
+	width: 110%;
+	margin-left: -5%;
+	padding-left: 30%;	
+	background-color:WhiteSmoke;
+	border-style: double;
+	border-top-width: 4px;
+	border-color: DarkSlateGray;		
+	font-family: "courier new";
+	font-size: small;
+}
+
+#comment
+{
+	width: 70%;
+}

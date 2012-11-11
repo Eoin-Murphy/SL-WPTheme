@@ -1,0 +1,329 @@
+/*
+Theme Name: SpuriousLogicV02
+Theme URI: http://spurious-logic.net/
+Description: custom theme for the spurious logic site
+Author: Eoin Murphy
+Author URI: http://spurious-logic.net/
+Tags: one-column, white, light, right-sidebar, fluid-width
+.
+Released under the "Copy it if you want but don't blame me when it doesn't work for you" licence.
+.
+*/
+
+body
+{
+	background-color: WhiteSmoke;
+	margin: 0px;
+	padding: 0px;
+}
+
+p
+{
+	margin-top: 0.8em;
+	margin-bottom:0.8em;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+#header
+{
+	margin-top: -5px;
+	width=110%;
+}
+
+#top
+{
+	background-color: white;
+	border-style: solid;
+	border-width: 0px;
+	border-bottom-width: 1px;	
+	border-color: DarkSlateGray;
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 100px;
+	padding-bottom: 0px;	
+	margin-bottom: 0px;
+}
+
+#top a:link , #top a:visited 
+{
+	font-family: "Courier New";	
+	color: DarkSlateGray;
+	text-decoration: none;
+}
+
+
+#top_bar
+{
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+#top_bar ul
+{
+	margin-top: 0px;
+	padding-top: 5px;
+	list-style-type: none;
+}
+
+#top_bar ul li
+{
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	margin-top: 0px;
+	margin-left: 5px;
+	padding-bottom: 2px;
+	border-style: solid;
+	border-width: 1px;	
+	border-color: DarkSlateGray;
+	background-color: white;
+	border-top-style: none;
+	z-index: 99;
+}
+
+#top_bar ul li a:link, #top_bar ul li a:visited
+{
+	font-family: georgia, serif;
+	color: DarkSlateGray; /*#CC3300 ;*/
+	text-decoration: none;
+	font-size: 1.1em;	
+}
+
+#top_bar ul li a:hover
+{
+	text-decoration:underline
+}
+
+#searchform
+{
+	text-align: right;
+}
+
+#content
+{
+	padding-top: 0px;
+	margin-top: 0px;
+	background-color: WhiteSmoke;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+#content-body
+{
+	width: 75%;	
+	float:left;
+	font-family: georgia, serif;
+	color: DarkSlateGray;
+	font-size: 1.0em;
+	line-height: 1.2em;
+}
+
+.floatLeft
+{
+	float: left;
+	padding: 5px;
+}
+
+.floatRight
+{
+	float: right;
+	padding: 5px;
+}
+
+.bigImg 
+{
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto
+}
+
+
+#single-content-body img.logo
+{
+ 	float: right;
+}
+
+#single-content-body
+{
+	width: 100%;
+	font-family: georgia, serif;
+	color: DarkSlateGray;
+	font-size: 1.0em;
+	line-height: 1.2em;
+}
+
+#single-content-body .storycontent
+{
+	width: 75%;
+	padding-left: 12%;
+}
+
+#single-content-body .storycontent:first-letter 
+{
+	font-size : 2.4em;
+	font-style: italic;
+	line-height: 0.7em;
+	float: left;
+	margin: 2px;
+	padding: 3px;
+	color: white;
+	background-color: DarkSlateGray;
+}
+
+#single-content-body p
+{
+	width: 75%;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+#content a:link, #content a:visited
+{
+	font-family: georgia, serif;
+	color: #CC3300 ;
+	text-decoration: none;		
+}
+
+#content a:hover
+{
+	text-decoration:underline
+}
+
+.post li
+{	
+	padding-bottom: 1em;
+}
+
+.post h3
+{	
+	color: White;
+	background-color: LightCyan;
+	margin-top: 0px;
+	padding-top: 1.0em;
+	padding-bottom: 1.0em;
+	padding-left: 5%;
+}
+
+.post
+{
+	background-color: White;
+/*	margin-bottom: 20px;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: DarkSlateGray;
+	*/
+}
+
+.story
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.post .meta, .post .feedback
+{
+	font-size: x-small;
+	padding-bottom: 1em;
+}
+
+.storytitle a:link, .storytitle ul li a:visited
+{
+	font-family: georgia, serif;
+	color: BLACK ;
+	text-decoration: none;
+	font-size: 1.1em;	
+}
+
+.storytitle h3 a:hover
+{
+	text-decoration:underline
+}
+
+.more-link, .more-link a:link, .more-link a:visited
+{
+	display: block;
+	padding-left: 20px;
+	color: red;
+	font-size: large;
+}
+
+#content-sidebar
+{
+	float:right;
+	width:15%;
+	font-size: 11px;
+	background-color: White;
+	margin-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-style: solid;
+	border-width: 0px;
+	border-left-width: 1px;
+	border-color: DarkSlateGray;
+}
+
+#content-sidebar h3
+{
+	font-family: georgia, serif;
+	color: DarkSlateGray;
+}
+
+#content-sidebar ul
+{
+	padding-left: 20px;
+	list-style-type: none;
+}
+
+.clear
+{
+	clear: both;	
+}
+
+
+#footer
+{
+	margin-top: 20px;
+	width: 110%;
+	margin-left: -5%;
+	padding-left: 30%;	
+	background-color:WhiteSmoke;
+	border-style: solid;
+	border-top-width: 1px;
+	border-color: DarkSlateGray;		
+	font-family: "courier new";
+	font-size: small;
+}
+
+#comment
+{
+	width: 70%;
+}
+
+.story-links
+{
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+}
+
+.gameDesc
+{
+	background-color: HoneyDew;
+	margin: 5px;	
+	padding: 5px;
+	padding-left: 15px;
+	border-style: solid;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-color: black;
+}

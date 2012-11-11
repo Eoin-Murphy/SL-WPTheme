@@ -1,0 +1,223 @@
+/*
+Theme Name: SpuriousLogicV03
+Theme URI: http://spurious-logic.net/
+Description: custom theme for the spurious logic site
+Author: Eoin Murphy
+Author URI: http://spurious-logic.net/
+Tags: one-column, white, light, right-sidebar, fluid-width
+.
+Released under the "Copy it if you want but don't blame me when it doesn't work for you" licence.
+.
+*/
+/* global section start */
+html
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+body
+{
+	background-color: Gray;
+	color: DarkSlateGray;
+
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	/*font-family:Georgia, Verdana;
+	font-size:14px;
+	line-height: 1.75em;*/
+	
+	padding: 0px;
+	/*padding-bottom: 50px;	 otherwise chrome status bar can hide text */
+	margin: 0px;
+	margin-top: -28px;	/* image viewer pushing down body element? */
+	
+	/*
+	background-image:url('images/Gargouille4.jpg');
+	background-repeat:no-repeat;
+	background-position:112% top;
+	background-attachment:fixed;
+	*/
+}
+p
+{
+	margin-top: 0.8em;
+	margin-bottom:0.8em;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+.center
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+}
+#title
+{
+	padding: 0px;
+	padding-top: 15px;
+	margin: 0px;
+	height:100px;
+	width:100%;
+	background:black;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	font-size: 1.5em;
+}
+#container
+{
+	padding: 0px;	
+	margin: 0px;
+	
+	
+	/*
+	background-image:url('images/notre_dame.jpg');
+	background-repeat:no-repeat;
+	background-position:-50px bottom;	
+	background-attachment:fixed;	
+	*/
+}
+a:link
+{
+	color: DarkSlateBlue;
+	text-decoration:none;
+}
+a:visited 
+{
+	color: DarkSlateBlue;
+	text-decoration:none;
+}
+h1 a:link, h1 a:visited 
+{
+	color: LightGray;
+}
+ 
+.story a:link
+{
+	border-bottom:1px dotted;
+}
+.story a:visited 
+{
+	border-bottom:1px dotted;
+}
+a:hover
+{
+	color: DarkSlateBlue;
+	text-decoration:underline;
+}
+
+.clear
+{
+	clear: both;	
+}
+
+
+/* global section end */
+/* navbar section start */
+#navbar
+{
+	
+	position:fixed;
+	right:2%;
+	top:17%;
+	width:15%;
+	font-size: 1em;	
+	background-image:url('images/trans75.png');
+	
+}
+#navbar ul
+{
+	list-style-type: none;
+	padding: 0px;
+	padding-top:0.5em;	
+	margin: 0px;
+}
+#navbar ul li
+{
+	padding:2px;
+	padding-left:10px;
+}
+/* navbar section end */
+/* content section start */
+#content-pane
+{
+	background-image:url('images/trans75.png');
+	width: 70.0%;
+	padding: 5px;
+	margin: 0px;
+	margin-left: 10%;
+}
+.storytitle
+{
+	background-color: Wheat;
+	margin-left: 5%;
+	padding-left: 5%;
+	width: 80%;
+}
+.story
+{
+	margin-left:auto;
+	margin-right:auto;
+	width: 85%;
+}
+.story h3
+{
+	/*border-bottom:1px dotted;*/
+	background: aliceblue;
+	padding-left: 22px;
+}
+.post p, .post pre
+{
+	/*background-image:url('images/trans75.png'); */
+}
+.floatLeft
+{
+	float: left;
+	padding: 5px;
+}
+
+.floatRight
+{
+	float: right;
+	padding: 5px;
+}
+
+.bigImg 
+{
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto
+}
+.meta
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	background: whiteSmoke;
+	padding: 5px;
+}
+.meta p
+{
+	background: whiteSmoke;
+}
+.press
+{
+	font-family: courier;
+	background: wheat;
+	padding: 5px;
+}
+.description {
+	height: 1px;
+	background-color:DarkSlateGray;
+	text-align: center
+}
+
+.description span {
+	background-color: white;
+	position: relative;
+	top: -0.8em;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+/* content section end */
