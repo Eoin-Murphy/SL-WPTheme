@@ -22,7 +22,7 @@ body
 
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Geneva, sans-serif;
 	font-size: 1.1em;
-	line-height: 1.6em;	
+	line-height: 1.4em;	
 	padding: 0px;
 	margin: 0px;
 	margin-top: -28px;
@@ -113,7 +113,7 @@ a:hover
 	right:2%;
 	top:17%;
 	width:15%;
-	font-size: 1em;	
+	font-size: 0.8em;	
 	border-left: 1px;
 	border-left-style: solid;	
 }
