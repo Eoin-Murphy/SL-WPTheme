@@ -48,7 +48,7 @@
 	<!-- begin navbar -->
 	<div id="navbar">
 		<ul>				
-			<li class="page_item page-item-2"><a href="http://spurious-logic.net/?page_id=2" title="Info"><span>Info</span></a></li> 	
+			<li class="page_item page-item-2"><a href="http://spurious-logic.net/?page_id=2" title="About"><span>About</span></a></li> 	
 			<?php 	if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 			<?php wp_list_categories('title_li=' . __('Categories:') . '&exclude=24,26,27, 28'); ?>
 			
@@ -135,7 +135,10 @@
 		if (have_posts()) : while (have_posts()) : the_post();
 		?>
 
-		<div <?php post_class() ?> id="post-<?php the_ID(); ?> post"><h3 class="storytitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+		<div <?php post_class() ?> id="post-<?php the_ID(); ?> post">
+		<div class="postTitle">
+			<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
+		</div>
 			
 			<div <?php if(get_the_ID() % 2 == 0) { echo 'class="story"';} else {echo 'class="story"';} /*even-odd removed*/ ?> >
 				<?php the_content(); ?>

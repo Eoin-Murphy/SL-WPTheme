@@ -21,8 +21,8 @@ body
 	color: DarkSlateGray;
 
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Geneva, sans-serif;
-	font-size: 15px;
-	line-height: 1.5em;	
+	font-size: 1.1em;
+	line-height: 1.6em;	
 	padding: 0px;
 	margin: 0px;
 	margin-top: -28px;
@@ -70,6 +70,10 @@ h1 a:link, h1 a:visited
 {
 	color: #111;
 }
+.postTitle a:link, .postTitle  a:visited
+{
+	color: #DD4B06;
+}
 .categories
 {
 	color: #111;
@@ -109,7 +113,9 @@ a:hover
 	right:2%;
 	top:17%;
 	width:15%;
-	font-size: 1em;		
+	font-size: 1em;	
+	border-left: 1px;
+	border-left-style: solid;	
 }
 #navbar ul
 {
@@ -127,17 +133,26 @@ a:hover
 /* content section start */
 #content-pane
 {
-	width: 70.0%;
+	width: 75%;
 	padding: 5px;
 	margin: 0px;
-	margin-left: 10%;
-}
-.storytitle
-{
-	font-weight: normal;
 	margin-left: 5%;
-	padding-left: 5%;
-	width: 80%;
+}
+.post
+{
+	background: whiteSmoke;
+}
+.postTitle
+{
+	background: #A8F8FF;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	font-weight: normal;
+	padding-left: 10%;
+	padding-top: 6px;
+	padding-bottom: 5px;
+	font-family: Palatino;
+	font-size: 1.4em;
 }
 .story
 {
@@ -188,5 +203,10 @@ a:hover
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-bottom: 5px;
+}
+.code{
+	font-family: monospace;
+	background: white;
+	padding: 3px;
 }
 /* content section end */
