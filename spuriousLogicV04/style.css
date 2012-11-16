@@ -25,7 +25,6 @@ body
 	line-height: 1.4em;	
 	padding: 0px;
 	margin: 0px;
-	margin-top: -28px;
 }
 p
 {
@@ -44,9 +43,30 @@ p
 {
 	padding-left: 5px;
 	margin: 0px;
+	margin-bottom: 0.5em;
 	font-family: times, Times New Roman, times-roman, georgia, serif;
 	font-size: 1.4em;
 	font-weight: bold;
+}
+.post-links
+{
+	min-height: 20px;
+	margin-left: 10px;
+	padding: 5px;
+	background: whiteSmoke;
+}
+.page_item
+{
+	margin-left:10px;
+}
+.page_item, .cat-item, .series_item
+{
+	margin-top: 2px;
+	background:whiteSmoke;
+}
+.right-nav
+{
+	float: right;
 }
 #container
 {
@@ -108,7 +128,7 @@ a:hover
 {	
 	position:fixed;
 	right:2%;
-	top:12%;
+	top:4%;
 	width:15%;
 	font-size: 0.8em;	
 	border-left: 1px;
@@ -118,7 +138,6 @@ a:hover
 {
 	list-style-type: none;
 	padding: 0px;
-	padding-top:0.5em;	
 	margin: 0px;
 }
 #navbar ul li
@@ -132,6 +151,7 @@ a:hover
 {
 	width: 75%;
 	padding: 5px;
+	padding-top: 0px;
 	margin: 0px;
 	margin-left: 5%;
 }
@@ -142,7 +162,7 @@ a:hover
 .postTitle
 {
 	background: #A8F8FF;
-	margin-top: 3px;
+	margin: 0px;
 	margin-bottom: 3px;
 	font-weight: normal;
 	padding-left: 10%;

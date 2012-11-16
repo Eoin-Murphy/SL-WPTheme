@@ -47,6 +47,39 @@
 		<div id="title">
 			<a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?>
 		</div>
+		<br />
+		<div class="post-links">
+			<?php if(is_single()) 
+			{
+				if ( in_category('24') || in_category('26') || in_category('27'))
+				{ 
+					previous_post_link('%link', '&laquo; Previous', TRUE); ?>
+					<span class="right-nav">
+						<?php next_post_link('%link', 'Next &raquo;', TRUE);?>
+					</span>
+				<?php }
+				else
+				{
+					next_post_link('%link', '&laquo; Newer', FALSE, '24 or 26 or 27'); ?>
+					<span class="right-nav">
+						<?php previous_post_link('%link', 'Older &raquo;', FALSE, '24 or 26 or 27');?>
+					</span>
+				<?php }
+			}
+			else 
+			{
+				if ( in_category('24') || in_category('26') || in_category('27'))
+				{					
+					posts_nav_link(' ', '&laquo; Previous', '<span class="right-nav">Next &raquo;</span>');
+				}
+				else
+				{
+					posts_nav_link(' ', '&laquo; Newer', '<span class="right-nav">Older &raquo;</span>');
+				}
+
+				
+			} ?>
+		</div>
 		<ul>				
 			<li class="page_item page-item-2"><a href="http://spurious-logic.net/?page_id=2" title="About"><span>About</span></a></li> 	
 			<?php 	if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
@@ -54,9 +87,9 @@
 			
 			 <li class="categories">Series:
 				 <ul>
-					<li><a href="http://spurious-logic.net/?cat=24">Tale of Moratalla</a></li>
-					<li><a href="http://spurious-logic.net/?cat=27">Spartan Folly</a></li>
-					<li><a href="http://spurious-logic.net/?cat=26">Sisyphean Design</a></li>
+					<li class="series_item"><a href="http://spurious-logic.net/?cat=24">Tale of Moratalla</a></li>
+					<li class="series_item"><a href="http://spurious-logic.net/?cat=27">Spartan Folly</a></li>
+					<li class="series_item"><a href="http://spurious-logic.net/?cat=26">Sisyphean Design</a></li>
 				 </ul>
 			 </li>
 			 
@@ -118,34 +151,7 @@
 			
 			<div class="clear"></div> 
 			
-		</div>
-		<div class="post-links">
-			<?php if(is_single()) 
-			{
-				if ( in_category('24') || in_category('26') || in_category('27'))
-				{					
-					previous_post_link('%link', '&laquo; Previous Post', TRUE); ?>&nbsp;&nbsp;&#8212;&nbsp;&nbsp;<?php next_post_link('%link', 'Next Post &raquo;', TRUE);
-				}
-				else
-				{
-					next_post_link('%link', '&laquo; Newer Posts', FALSE, '24 or 26 or 27'); ?>&nbsp;&nbsp;&#8212;&nbsp;&nbsp;<?php previous_post_link('%link', 'Older Posts &raquo;', FALSE, '24 or 26 or 27');
-				}
-			}
-			else 
-			{
-				if ( in_category('24') || in_category('26') || in_category('27'))
-				{					
-					posts_nav_link('&nbsp;&nbsp;&#8212;&nbsp;&nbsp;', __('&laquo; Older Posts'), __('Newer Posts &raquo;'));
-				}
-				else
-				{
-					posts_nav_link('&nbsp;&nbsp;&#8212;&nbsp;&nbsp;', __('&laquo; Newer Posts'), __('Older Posts &raquo;'));
-				}
-
-				
-			} ?>
-		</div>
-		
+		</div>	
 		<?php comments_template(); // Get wp-comments.php template ?>
 
 		<?php endwhile; else: ?>
