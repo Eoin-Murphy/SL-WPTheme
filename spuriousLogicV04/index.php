@@ -41,12 +41,12 @@
 
 
 <body>
-<div id="container"> 
-	<div id="title">
-		<h1 class="center"><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>	
-	</div>
+<div id="container">
 	<!-- begin navbar -->
-	<div id="navbar">
+	<div id="navbar">	 
+		<div id="title">
+			<a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?>
+		</div>
 		<ul>				
 			<li class="page_item page-item-2"><a href="http://spurious-logic.net/?page_id=2" title="About"><span>About</span></a></li> 	
 			<?php 	if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
@@ -103,34 +103,6 @@
 			query_posts($query_string . '&cat=-24,-26,-27');
 		}
 		?>
-
-		<div class="post-links">
-			<?php if(is_single()) 
-			{
-				if ( in_category('24') || in_category('26') || in_category('27'))
-				{					
-					previous_post_link('%link', '&laquo; Previous Post', TRUE); ?>&nbsp;&nbsp;&#8212;&nbsp;&nbsp;<?php next_post_link('%link', 'Next Post &raquo;', TRUE);
-				}
-				else
-				{
-					next_post_link('%link', '&laquo; Newer Posts', FALSE, '24 or 26 or 27'); ?>&nbsp;&nbsp;&#8212;&nbsp;&nbsp;<?php previous_post_link('%link', 'Older Posts &raquo;', FALSE, '24 or 26 or 27');
-				}
-			}
-			else 
-			{
-				if ( in_category('24') || in_category('26') || in_category('27'))
-				{					
-					posts_nav_link('&nbsp;&nbsp;&#8212;&nbsp;&nbsp;', __('&laquo; Older Posts'), __('Newer Posts &raquo;'));
-				}
-				else
-				{
-					posts_nav_link('&nbsp;&nbsp;&#8212;&nbsp;&nbsp;', __('&laquo; Newer Posts'), __('Older Posts &raquo;'));
-				}
-
-				
-			} ?>
-		</div>
-		
 		<?php
 		if (have_posts()) : while (have_posts()) : the_post();
 		?>
@@ -147,14 +119,6 @@
 			<div class="clear"></div> 
 			
 		</div>
-
-		<?php comments_template(); // Get wp-comments.php template ?>
-
-		<?php endwhile; else: ?>
-		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-		<?php endif; ?>
-		
-
 		<div class="post-links">
 			<?php if(is_single()) 
 			{
@@ -181,7 +145,12 @@
 				
 			} ?>
 		</div>
+		
+		<?php comments_template(); // Get wp-comments.php template ?>
 
+		<?php endwhile; else: ?>
+		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+		<?php endif; ?>
 	</div>
 	<!-- end content pane -->
 </div>
